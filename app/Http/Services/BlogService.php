@@ -17,7 +17,7 @@ class BlogService
 
     public function create(array $data): BlogModel
     {
-        $blogData['massage'] = $data['message'];
+        $blogData['message'] = $data['message'];
         $blogData['name']    = auth()->user()->name;
         $blogData['email']   = auth()->user()->email;
 
@@ -56,7 +56,7 @@ class BlogService
     {
         $blog = BlogModel::find($data['id']);
 
-        $blog->massage = $data['message'];
+        $blog->message = $data['message'];
 
         $blog->save();
     }

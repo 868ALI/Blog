@@ -5,7 +5,7 @@
 @section('content')
     <h1>Блог</h1>
     <div class="alert alert-info" style="margin-left: 10%; width: 500px;">
-        <h3>{{ $blog->massage }}</h3>
+        <h3>{{ $blog->message }}</h3>
         <p>{{ $blog->email }} - {{ $blog->name }}</p>
         <p><small>{{ $blog->created_at }}</small></p>
         @if(auth()->user()->email === $blog->email)

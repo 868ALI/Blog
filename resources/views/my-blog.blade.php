@@ -12,7 +12,7 @@
        style="margin-left: 10%; width: 500px;"><button class="btn btn-secondary" style="margin-bottom: 7px;">Сначала старые</button></a>
     @foreach($data as $el)
         <div class="alert alert-info" style="margin-left: 10%; width: 500px;">
-            <h3>{{ $el->massage }}</h3>
+            <h3>{{ $el->message }}</h3>
             <p>{{ $el->email }}</p>
             <p><small>{{ $el->created_at }}</small></p>
             <a href="{{ route('one-blog', $el->id) }}"><button class="btn btn-warning">Детально</button></a>

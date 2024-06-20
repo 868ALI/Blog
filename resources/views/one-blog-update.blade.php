@@ -1,4 +1,4 @@
-@if(auth()->user()->email === $data->email)
+{{--@if(auth()->user()->email === $data->email)--}}
 
     @extends('layouts.standard')
 
@@ -21,11 +21,11 @@
         <form action="{{ route('one-blog-update-post', $blog->id) }}" method="post">
             @csrf
             <div class="form-group" style="margin-left: 10%; width: 500px;">
-                <textarea name="message" id="message" class="form-control" placeholder="Enter your message">{{ $blog->massage }}</textarea>
+                <textarea name="message" id="message" class="form-control" placeholder="Enter your message">{{ $blog->message }}</textarea>
             </div>
             <br>
             <button type="submit" class="btn btn-success" style="margin-left: 10%">Обнавить</button>
         </form>
     @endsection
-@endif
+{{--@endif--}}
 
